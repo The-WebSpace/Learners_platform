@@ -33,3 +33,5 @@ git config --global user.name "Your Name Here"
 git config --global user.email "youremail@email.com"
 git config --list              //checks the configuration details
 ```
+# Some Common Git Commands (MUST KNOW)
+- **git init:** Creates new hidden file named .git   
