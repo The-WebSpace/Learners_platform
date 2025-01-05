@@ -139,14 +139,14 @@ A project might either be started by initiating a repo ourselves (git init would
      ```
      Now if you check the git status, you can see that the work tree is clean. You can work on it as if no changes is made in your local repo. This way you can now pull from the main branch as well.
 
-     If you want to use the stashed file just use git stash pop
-```
-git stash pop
-```
-   If you want to clear/permanently delete the stashed files, just use the below code
-   ```
-git stash clear
-   ```
+   - If you want to use the stashed file just use git stash pop
+      ```
+      git stash pop
+      ```
+  - If you want to clear/permanently delete the stashed files, just use the below code
+      ```
+      git stash clear
+      ```
    
 ## Checking Status and Logs
 
