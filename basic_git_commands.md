@@ -25,8 +25,9 @@
 > Requirements: VS code, Terminal (Terminal might be pre-installed, just check by searching terminal)
 
 #### To Check if Git is installed 
+Below code checks the version of installed git, if not installed then shows git as unrecognised command
 ```
-git --version //checks the version of installed git, if not installed then shows git as unrecognised command
+git --version
 ```
 ## Configure Git (In local repo)
 Git can be configured locally and globally. But for now lets look at how to configure it globally.
@@ -43,13 +44,13 @@ A project might either be started by initiating a repo ourselves (git init would
 1. **git init**: Use this if local repo is to be created first and we just need to push it to remote repo
    Creates new hidden file named .git 
    Initialize a new Git repository in the current directory.
-   ```bash
+   ```
    git init
    ```
 
 2. **git clone repository_url**: Use this if remote repo is created and we need to pull that to local repo
    Clone an existing repository from GitHub.
-   ```bash
+   ```
    git clone repository_url
    ```
 
@@ -126,6 +127,27 @@ A project might either be started by initiating a repo ourselves (git init would
     git pull origin branch_name
     ```
 
+## Stashing the changes (use when forgot to pull before making changes)
+  git stash is used when you dont want to commit the changes but dont want to lose the changes as well
+     Dont worry if you forgot to pull from the main branch before making change. Git stash will help you in those condition. But be ready to manage conflict (which isnt difficult as well). <br>
+
+  git stash is used after staging the files using git add
+  
+   - stashing the added file
+     ```
+     git stash
+     ```
+     Now if you check the git status, you can see that the work tree is clean. You can work on it as if no changes is made in your local repo. This way you can now pull from the main branch as well.
+
+     If you want to use the stashed file just use git stash pop
+```
+git stash pop
+```
+   If you want to clear/permanently delete the stashed files, just use the below code
+   ```
+git stash clear
+   ```
+   
 ## Checking Status and Logs
 
 14. **git status**  
