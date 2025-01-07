@@ -197,4 +197,4 @@ This command will:
 - Remove (`rm`) the hidden .git directory recursively (`-r`)
 - Use `-force` flag since .git contains read-only files
 
-After running this command, your Desktop directory will no longer be a Git repository, effectively undoing the `git init` command. All Git-related configuration and history will be removed, but your actual files will remain untouched.
+
