@@ -186,4 +186,15 @@ A project might either be started by initiating a repo ourselves (git init would
     git reset commit_hash   //commit hash can be seen using git log, copy the hash till which you want to keep
     git reset --hard commit_hash   //resets commit from VS code as well
     ```
+18. **Remove Git Repository :**
+To undo Git initialization and remove the Git repository from your Desktop directory, use this command:
 
+```powershell
+rm -r -force .git
+```
+
+This command will:
+- Remove (`rm`) the hidden .git directory recursively (`-r`)
+- Use `-force` flag since .git contains read-only files
+
+After running this command, your Desktop directory will no longer be a Git repository, effectively undoing the `git init` command. All Git-related configuration and history will be removed, but your actual files will remain untouched.
