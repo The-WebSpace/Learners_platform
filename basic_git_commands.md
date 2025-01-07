@@ -186,7 +186,15 @@ If you need to pull updates but have uncommitted changes, stash them temporarily
    git log
    ```
    - Shows a history of commits.
+   - The output of git log looks like:
+   ```
+   commit a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t
+   Author: Your Name <youremail@example.com>
+   Date:   Wed Dec 27 10:30:00 2023 +0000
 
+   Added feature X to the project
+   ```
+   Here, a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t is the commit hash representing the specific commit with commit message "Added feature X to the project"
 ---
 
 ## **Undoing Changes**
