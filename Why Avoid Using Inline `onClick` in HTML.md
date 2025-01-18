@@ -100,3 +100,5 @@ In small, isolated scripts or prototypes, inline `onClick` may be acceptable for
 
 Avoiding inline `onClick` ensures better security, maintainability, and performance. Instead, use modern event handling techniques to build scalable and secure web applications.
 
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/bijay-b-k-ba5440261/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/bijay-b-k-ba5440261/" height="30" width="40" /></a>
+bijay-develops 
