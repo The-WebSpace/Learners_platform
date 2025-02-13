@@ -73,14 +73,26 @@ This configuration applies to all repositories on your computer.
    ```
    - Replace `<repository_url>` with the GitHub repository link.
 
-### **Connecting a Local Repository to GitHub**
-If you initialized the repository locally, link it to a remote GitHub repository:
-```bash
-git remote add origin <repository_url>
-```
+## **Connecting a Local Repository to GitHub**
+1. If you initialized the repository locally, link it to a remote GitHub repository:
+      ```bash
+      git remote add origin <repository_url>
+      ```
 - `origin` is the name of the remote.
 - `<repository_url>` is the URL of your GitHub repository.
 
+2. Checking Out the Remote Branch Directly on Local Device (Detached HEAD Mode):
+      ```
+      git checkout origin/<branch-name>
+      ```
+   - Detached HEAD mode means you can view files, but any commits you make won't be attached to a branch.
+   - If you try to commit, Git will warn you that you're not on a branch.
+
+3. Checking Out the Remote Branch on Local Device by creating branch:
+      ```
+      git checkout -b <branch-name> origin/<branch-name>
+      ```
+ - Now you are on a proper local branch that tracks origin/<branch-name>.
 ---
 
 ## **Adding and Committing Changes**
